@@ -3,18 +3,18 @@
 
 terraform {
 
- /* 
+  /* 
  cloud {
     workspaces {
-      name = "learn-terraform-eks"
+      name = "hoitrada-terraform-eks"
     }
   } 
   */
 
- backend "s3" {
-    bucket = "hoitrada-tfstate"
-    key    = "terraform.tfstate"
-    region = "ap-southeast-1"
+  backend "s3" {
+    bucket  = "hoitrada-tfstate"
+    key     = "terraform.tfstate"
+    region  = "ap-southeast-1"
     profile = "default"
     encrypt = true
   }
